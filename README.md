@@ -3,9 +3,9 @@ DSRemote Windows 10 x64 (Desktop_Qt_5_13_2_MinGW_64_bit)
 Operate your Rigol oscilloscope from your Windows desktop.
 Only LAN connection supported.
 
-Clone from:
-(DSRemote written by Teuniz)[https://gitlab.com/Teuniz/DSRemote]
-(DSRemote)[https://www.teuniz.net/DSRemote/index.html]
+Clone from:<br>
+[DSRemote written by Teuniz](https://gitlab.com/Teuniz/DSRemote)<br>
+[DSRemote)(https://www.teuniz.net/DSRemote/index.html)<br>
 
 Supported devices
 ---------------
@@ -34,3 +34,5 @@ On your scope, go to the menu Utility -> Options -> Installed and make sure you 
 * TRIGGER Timeout,Runt,Window,Delay,Setup,NthEdge,RS232,I2C,SPI Official
 * RECORDER Record/Re-play Official
 * BANDWIDTH 100M Official
+
+[Готовые исполняемые файлы для Win10x64](https://github.com/pvvx/DSRemote/blob/master/bin/DsRemote.zip)
