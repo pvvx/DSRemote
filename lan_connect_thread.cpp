@@ -1,0 +1,75 @@
+/*
+***************************************************************************
+*
+* Author: Teunis van Beelen
+*
+* Copyright (C) 2016, 2017, 2018, 2019 Teunis van Beelen
+*
+* Email: teuniz@protonmail.com
+*
+***************************************************************************
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+***************************************************************************
+*/
+
+
+#include "lan_connect_thread.h"
+#include "osc_lan.h"
+
+
+lan_connect_thread::lan_connect_thread()
+{
+  device = nullptr;
+
+  dev_str[0] = 0;
+}
+
+
+void lan_connect_thread::run()
+{
+  msleep(300);
+
+  if(dev_str[0] == 0) return;
+
+  device = tmc_open_lan(dev_str);
+//  qDebug() << "tmc_open_lan() = " << device;
+}
+
+
+struct tmcdev * lan_connect_thread::get_device(void)
+{
+//    qDebug() << "get_device() = " << device;
+  return device;
+}
+
+
+void lan_connect_thread::set_device_address(const char *addr)
+{
+  strlcpy(dev_str, addr, 64);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
