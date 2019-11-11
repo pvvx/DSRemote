@@ -5,7 +5,7 @@ Only LAN connection supported.
 
 Clone from:<br>
 [DSRemote written by Teuniz](https://gitlab.com/Teuniz/DSRemote)<br>
-[DSRemote)(https://www.teuniz.net/DSRemote/index.html)<br>
+[DSRemote](https://www.teuniz.net/DSRemote/index.html)<br>
 
 Supported devices
 ---------------
